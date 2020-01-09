@@ -8,6 +8,9 @@
  */
 
 // Your code:
+function sameSign (numA, numB) {
+  return (numA>0&&numB>0 || numA<0&&numB<0 || numA===numB);
+}
 
 //* Begin of tests
 const assert = require('assert');
