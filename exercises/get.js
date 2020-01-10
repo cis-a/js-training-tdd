@@ -7,7 +7,7 @@
  * @notions Functions, Data-Structures, Get
  */
 function get (theKey) {
-    return sourceObject[theKey];
+  return sourceObject[theKey];
 }
 
 // Provided code:
