@@ -7,7 +7,10 @@
  */
 
 // Your code:
-
+function words (astr) {
+  var arr = astr.split(" ");
+  return arr;
+}
 //* Begin of tests
 const assert = require('assert');
 
