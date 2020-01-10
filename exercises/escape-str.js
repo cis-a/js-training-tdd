@@ -6,6 +6,7 @@
  *
  * @notions Primitive and Operators, Variables
  */
+ const escapeStr = '\'\"\`\/\\\\';
 
 // Your code:
 
