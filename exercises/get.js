@@ -6,6 +6,23 @@
  *
  * @notions Functions, Data-Structures, Get
  */
+function get (theKey) {
+  switch (theKey) {
+    case 'num':
+    return sourceObject.num;
+    break;
+    case 'bool':
+    return sourceObject.bool;
+    break;
+    case 'str':
+    return sourceObject.str;
+    break;
+    case 'log': return sourceObject.log;
+    break;
+    case 'noexist':
+    return sourceObject.undefined;
+  }
+}
 
 // Provided code:
 const sourceObject = {
