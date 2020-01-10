@@ -10,6 +10,22 @@
  */
 
 // Your code:
+function multiply (a,b) {
+  if (a == 0 || b == 0) {
+    return 0;
+  }
+  if (a < 0 && b > 0 || a > 0 && b  < 0 ) {
+      a = -Math.abs(a);
+  } else if (a < 0) {
+    a = Math.abs(a);
+  };
+
+  b = Math.abs(b);
+  if (b==1) {
+    return a;
+  }
+  return a += multiply (a, b-1);
+}
 
 //* Begin of tests
 const assert = require('assert');
