@@ -9,6 +9,24 @@
  */
 
 // Your code:
+function multiply (a, b) {
+if (a==0 || b == 0) {
+  return 0;
+  }
+var negsign = (a<0 && b >0 || a>0 && b<0);
+a = Math.abs(a);
+b = Math.abs(b);
+let i =0;
+let mul=0;
+while (i<b){
+  mul+=a;
+  i++
+}
+if (negsign) {
+  return -mul;
+}
+return mul;
+}
 
 //* Begin of tests
 const assert = require('assert');
